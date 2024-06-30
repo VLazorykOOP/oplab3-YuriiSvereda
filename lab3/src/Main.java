@@ -1,5 +1,3 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
     public static void main(String[] args) {
         Car car = new Car.CarBuilder()
@@ -10,5 +8,14 @@ public class Main {
                 .build();
 
         System.out.println(car);
+
+        ComputerFacade computer = new ComputerFacade();
+        computer.startComputer();
+        System.out.println("Computer started.");
+
+        // Do some work...
+
+        computer.stopComputer();
+        System.out.println("Computer stopped.");
     }
 }
